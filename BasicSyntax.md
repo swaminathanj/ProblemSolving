@@ -1,5 +1,7 @@
 # Basic Syntax and Semantics of C
 
+Covers the basics of the C programming language: input, output, variables and data types, arithmetic, relational and logical operators, functions, branching and loops. These are sufficient to start solving simple problems.
+
 ## 1. Getting started
 
 ### nothing.c
