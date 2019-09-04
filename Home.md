@@ -8,7 +8,8 @@
  - [Semantics of Basic Syntax](BasicSemantics.md)
  - [Under the hood: How a program runs](UnderTheHood.md)
  
-### Problems worked out in an incremental fashion
+### Worked out Examples
+Problems for which solutions are worked out in an incremental fashion
  1. [Frog Jumping](FrogJumping.md)
  2. [The Rank](TheRank.md)
  3. [Romaji](Romaji.md)
