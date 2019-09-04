@@ -272,7 +272,7 @@ int main() {
 }
 ```
 
-Semantics
+#### Semantics
  - The value of a variable of const type cannot be modified. 
 
 ## 3. Input
@@ -349,7 +349,7 @@ int main() {
 }
 ```
 
-### Semantics
+#### Semantics
  - If the computed values go out of range defined for that type, it will lead to overflow.
 
 ### relational_ops.c
