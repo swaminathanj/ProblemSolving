@@ -5,7 +5,7 @@
 
 ### The Fundamentals
  - [Basic Syntax](BasicSyntax.md)
- - [Semantics of Basic Syntax](BasicSemantics.md]
+ - [Semantics of Basic Syntax](BasicSemantics.pdf)
  - [Under the hood: How a program runs](UnderTheHood.md)
  
 ### Examples worked out by incremental approach
