@@ -17,6 +17,7 @@ Problems for which solutions are worked out in an incremental fashion
  5. [Repeating Cipher](RepeatingCipher.md)
 
 ### Problems from Code Forces
+Start solving these problems in the lines demonstrated above.
  1. [Golden Plate (1031A)](https://codeforces.com/problemset/problem/1031/A)
  2. [In search of Easy problem (1030A)](https://codeforces.com/problemset/problem/1030/A)
  3. [Integer sequence dividing (1102A)](https://codeforces.com/problemset/problem/1102/A)
