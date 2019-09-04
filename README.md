@@ -1,2 +1,2 @@
 # ProblemSolving
-Problem Solving through Programming
+This course teaches you use programming towards problem solving.
