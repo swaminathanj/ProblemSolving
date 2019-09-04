@@ -8,6 +8,7 @@
 
 Assumption: x, y are of int types
 
+```
  1. printf("%d", x)   --> Missing semicolon
                          Syntax error
 
@@ -25,6 +26,7 @@ Assumption: x, y are of int types
 
  6. printf("x+y = %d", x-y); --> Meant sum, performed difference
                                 Logical error
+```
 
 ## (B) scanf
 
