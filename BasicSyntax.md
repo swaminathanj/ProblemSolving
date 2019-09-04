@@ -17,7 +17,7 @@ int main() {
 }
 ```
 
-### Semantics
+#### Semantics
 
 This is probably the first program you will write. Although it doesn't do anything, it gives a fair idea about the structure of a C program.
 
@@ -45,7 +45,7 @@ int main() {
 }
 ```
 
-### Semantics
+#### Semantics
 
  - printf() is a function which is used to write to the terminal. This is defined in the header file stdio.h (what is header??) and hence we have to include the header if we need to use it.
 
@@ -66,11 +66,13 @@ int main() {
 }
 ```
 
-### Semantics
+#### Semantics
 
  - \n denotes the new line character. The backslash '\' before 'n' signifies how 'n' should be interpreted as newline.
 
-hello_tab.c
+### hello_tab.c
+
+``` c
 /* 
  * A program that prints Hello World after a tab space
  * Compilation: gcc hello_tab.c -o hello_tab
@@ -83,13 +85,17 @@ int main() {
     printf("\tHello World\n");
     return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-\t denotes tab space character. Generally 4 or 8 white spaces.
+ - \t denotes tab space character. Generally 4 or 8 white spaces.
 
-3. Variables and Data types
-char.c
+## 3. Variables and Data types
+
+### char.c
+
+``` c
 /* 
  * A program that declares a variable of char type
  * prints it in a formatted way.
@@ -108,13 +114,17 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-A char variable occupies 1 byte/8 bits of memory.
-A char variable takes ASCII values. i.e. all those you typically see on the keyboard. It includes '0', ..., '9', 'A', ..., 'Z', 'a', ..., 'z', '!', ..., ')', ...
-A char value has to be specified within single quotes (to distinguish from variable name).
-integer.c
+ - A char variable occupies 1 byte/8 bits of memory.
+ - A char variable takes ASCII values. i.e. all those you typically see on the keyboard. It includes '0', ..., '9', 'A', ..., 'Z', 'a', ..., 'z', '!', ..., ')', ...
+ - A char value has to be specified within single quotes (to distinguish from variable name).
+
+### integer.c
+
+``` c
 /* 
  * A program that declares a variable of int type
  * prints it in a formatted way.
@@ -133,16 +143,19 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-An int variable occupies 4 bytes/32 bits of memory.
-An int variable takes values in the range -231 and 231 - 1 (-2147483648 to 2147483647).
-An unsigned int takes values in the range 0 and 232 - 1 (0 to 4294967295).
-Try assiging a value that is beyond the specified range and see what happens?
-It can be hard to remember the max and min values. Luckily, you don't have to.
+ - An int variable occupies 4 bytes/32 bits of memory.
+ - An int variable takes values in the range -231 and 231 - 1 (-2147483648 to 2147483647).
+ - An unsigned int takes values in the range 0 and 232 - 1 (0 to 4294967295).
+ - Try assiging a value that is beyond the specified range and see what happens?
+ - It can be hard to remember the max and min values. Luckily, you don't have to.
 
-max_int.c
+### max_int.c
+
+``` c
 /* 
  * A program that prints max value of int type
  * Compilation: gcc max_int.c -o max_int
@@ -159,14 +172,17 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-You can very well guess how to print min values of both.
-You need to include limits.h in order to use them.
-There are shorter and longer versions of int type: short (2 bytes/16 bits) and long (8 bytes/64 bits).
+ - You can very well guess how to print min values of both.
+ - You need to include limits.h in order to use them.
+ - There are shorter and longer versions of int type: short (2 bytes/16 bits) and long (8 bytes/64 bits).
 
-short_long.c
+### short_long.c
+
+``` c
 /* 
  * A program that declares variables of short and long types
  * prints them in a formatted way.
@@ -183,7 +199,6 @@ int main() {
   printf("The value of s is %d\t", sh);
   printf("The value of us is %u\n", ush);
 
-
   long ln = 425;
   unsigned long uln = 109385;
   printf("The value of l is %ld\t", ln);
@@ -191,17 +206,20 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-An short variable takes values in the range -215 and 215 - 1 (-32768 to 32767).
-An unsigned short takes values in the range 0 and 216 - 1 (0 to 65535).
-An long variable takes values in the range -263 and 263 - 1 (-9223372036854775808 to 9223372036854775807) on 64 bit systems. On 32 bit systems you have to use long long instead of long. The format specifier is %lld.
-An unsigned long takes values in the range 0 and 263 - 1 (0 to 18446744073709551615) on 64 bit systems. On 32 bit systems, you have to use unsigned long long instead of unsigned long. The format specifier is %llu.
-The max values of signed and unsigned versions of short and long are SHRT_MAX, USHRT_MAX, LONG_MAX and ULONG_MAX.
-Floating point types deal with decimal numbers. There are two variants float and double that occupy 32 bits and 64 bits respectively.
+ - An short variable takes values in the range -215 and 215 - 1 (-32768 to 32767).
+ - An unsigned short takes values in the range 0 and 216 - 1 (0 to 65535).
+ - An long variable takes values in the range -263 and 263 - 1 (-9223372036854775808 to 9223372036854775807) on 64 bit systems. On 32 bit systems you have to use long long instead of long. The format specifier is %lld.
+ - An unsigned long takes values in the range 0 and 263 - 1 (0 to 18446744073709551615) on 64 bit systems. On 32 bit systems, you have to use unsigned long long instead of unsigned long. The format specifier is %llu.
+ - The max values of signed and unsigned versions of short and long are SHRT_MAX, USHRT_MAX, LONG_MAX and ULONG_MAX.
+ - Floating point types deal with decimal numbers. There are two variants float and double that occupy 32 bits and 64 bits respectively.
 
-fptypes.c
+### fptypes.c
+
+``` c
 /* 
  * A program that declares variables of floating point types,
  * assigns values and prints them in a formatted way.
@@ -221,15 +239,18 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-Floating point types are stored as [mantissa, exponent] form.
-There is not unsigned variant of floating point types.
-FP variables are stored and manipulated differently.
-A variable (of any type) can be qualified by a keyword const in order to restrict its modifiable status.
+ - Floating point types are stored as [mantissa, exponent] form.
+ - There is not unsigned variant of floating point types.
+ - FP variables are stored and manipulated differently.
+ - A variable (of any type) can be qualified by a keyword const in order to restrict its modifiable status.
 
-constant.c
+### constant.c
+
+``` c
 /* 
  * A program that declares a const value and therefore cannot
  * be modified.
@@ -249,13 +270,16 @@ int main() {
 
   return 0;
 }
+```
 
 Semantics
+ - The value of a variable of const type cannot be modified. 
 
- 
+## 3. Input
 
-3. Input
-input.c
+### input.c
+
+``` c
 /* 
  * A program that reads values of variables from keyboard and
  * prints them in a formatted way.
@@ -282,12 +306,17 @@ int main() {
   printf("The values entered are %c, %ul and %f.\n", ch, ln, fl);
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-Observe the & in front of the variable names in the scanf(). It refers to the location/address of the variables. &ch, &ln and &fl denote the address of the variables ch, ln and fl respectively. Essentially, it means copy the value to the location of the variable.
-4. Operators
-arithmetic_ops.c
+ - Observe the & in front of the variable names in the scanf(). It refers to the location/address of the variables. &ch, &ln and &fl denote the address of the variables ch, ln and fl respectively. Essentially, it means copy the value to the location of the variable.
+ 
+## 4. Operators
+
+### arithmetic_ops.c
+
+``` c
 /* 
  * A program that performs basic arithmetic operations such as
  * addition, substraction, multiplication and division.
@@ -318,12 +347,14 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+### Semantics
+ - If the computed values go out of range defined for that type, it will lead to overflow.
 
- 
+### relational_ops.c
 
-relational_ops.c
+``` c
 /* 
  * A program that performs relational operations such as equal to, not equal to, 
  * greater than [or equal] to and less than [or equal] to.
@@ -348,12 +379,17 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-If the comparison turn out to be true, result is 1. If not, result is 0.
-Relational operators are primarily used in evaluating an expression and deciding which path (among two or more) to take based on the result of the evaluation.
-logical_ops.c
+ - If the comparison turn out to be true, result is 1. If not, result is 0.
+ - Relational operators are primarily used in evaluating an expression and deciding which path (among two or more) to take based on the result of the evaluation.
+ 
+ 
+### logical_ops.c
+
+``` c
 /* 
  * A program that performs logical operations such as AND, OR and NOT.
  * Compilation: gcc logical_ops.c -o logical_ops
@@ -375,20 +411,24 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
 Logical operators are used to combine multiple relational operations to form a complex or larger evaluation condition.
-&& is AND operator
-|| is OR operator
-! is NOT operator
-5. Functions
+ - && is AND operator
+ - || is OR operator
+ - ! is NOT operator
+ 
+## 5. Functions
 Functions are independent modules that implement a functionality. They help to keep the code modular by splitting the code into smaller, manageable and reusable units. Function divides the implementation concerns into two parts.
 
-1. Function definition - Solely concerned about the implementation of the functionality.
-2. Function invocation - Solely concerned about the use of defined function towards the goal.
+ 1. Function definition - Solely concerned about the implementation of the functionality.
+ 2. Function invocation - Solely concerned about the use of defined function towards the goal.
 
-square_of_sum.c
+### square_of_sum.c
+
+``` c
 /* 
  * A program that implements a function that computes square of sum.
  * i.e. given two numbers a and b, it computes (a + b)2.
@@ -418,17 +458,22 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
 
-The function square_of_sum takes 2 integer parameters, computes and returns an integer.
-The main function merely reads the input, delegates the computation to square_of_sum, recieves the result and prints.
-The variable ss in square_of_sum is different from the variable ss in main, although both have same names. They are local to their respective functions.
-Write a program that defines a function sum_of_squares that takes parameters a and b, and computes a2 + b2.
-sum_of_squares.c
+ - The function square_of_sum takes 2 integer parameters, computes and returns an integer.
+ - The main function merely reads the input, delegates the computation to square_of_sum, recieves the result and prints.
+ - The variable ss in square_of_sum is different from the variable ss in main, although both have same names. They are local to their respective functions.
+
+Write a program that defines a function sum_of_squares that takes parameters a and b, and computes a^2 + b^2.
+
+### sum_of_squares.c
+
+``` c
 /* 
  * A program that implements a function that computes sum of squares.
- * i.e. given two numbers a and b, it computes (a + b)2.
+ * i.e. given two numbers a and b, it computes (a + b)^2.
  * Compilation: gcc sum_of_squares.c -o sum_of_squares
  * Execution: ./sum_of_squares
  */
@@ -448,12 +493,16 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+#### Semantics
+ - The two statements can be replaced by a single statement: printf("%d", sum_of_squares(3,4));
 
-The two statements can be replaced by a single statement: printf("%d", sum_of_squares(3,4));
-6. Branching
-if.c
+## 6. Branching
+
+### if.c
+
+``` c
 /* 
  * A program that evaluates a condition and performs an
  * action if it is true.
@@ -479,12 +528,11 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+### if_else.c
 
- 
-
-if_else.c
+``` c
 /* 
  * A program that evaluates a condition and decides 
   *different courses of action based on the result.
@@ -513,14 +561,13 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
+Now, lets implement a bit more complex condition. We will check if a given 3 numbers a, b, c form a pythogorean triplet. i.e. a^2 + b^2 equals c^2. We can re-use the previously defined function sum_of_squares.
 
- 
+### pt.c
 
-Now, lets implement a bit more complex condition. We will check if a given 3 numbers a, b, c form a pythogorean triplet. i.e. a2 + b2 equals c2. We can re-use the previously defined function sum_of_squares.
-
-pt.c
+``` c
 /* 
  * A program that checks if 3 numbers a, b, c form a 
  * pythogrean triplet and print Y or N.
@@ -555,15 +602,17 @@ int main() {
 
   return 0;
 }
+```
 
-Semantics
-
-if ( (a*a + b*b) = c*c) ... will work equally well. However, we don't want to reinvent the wheel. Using the function that is tried and tested is better than re-implementing.
-The implementation of is_py_triplet is not foolproof. It will work correctly only if the last number entered c is largest. What if someone entered 3 5 4? 
-Can you make the condition strong enough to work correctly regardless of the order in which user enters the numbers? (HINT: use logical operators)
+#### Semantics
+ - if ( (a*a + b*b) = c*c) ... will work equally well. However, we don't want to reinvent the wheel. Using the function that is tried and tested is better than re-implementing.
+  - The implementation of is_py_triplet is not foolproof. It will work correctly only if the last number entered c is largest. What if someone entered 3 5 4? Can you make the condition strong enough to work correctly regardless of the order in which user enters the numbers? (HINT: use logical operators)
+  
 You can have nested if..else blocks to implement nested branching. An example that sorts 3 numbers is given below.
 
-nested_ifs.c
+### nested_ifs.c
+
+``` c
 /* 
  * A program that orders 3 distinct numbers a, b, c  
  * in increasing fashion.
@@ -608,15 +657,14 @@ int main() {
 
   printf("%d < %d < %d", min, mid, max);
 }
+```
 
-Semantics
-
- 
-
-7. Loops
+## 7. Loops
 Sometimes one may want to repeat an operation several times. This can be accomplished by loop constructs: while, for and do..while.
 
-while.c
+### while.c
+
+``` c
 /* 
  * A program that prints Hello 10 times
  * Compilation: gcc while.c -o while.c
@@ -632,12 +680,11 @@ int main() {
     i++;                // increment operation that tracks count
   }
 }
+```
 
-Semantics
+### whilen.c
 
- 
-
-whilen.c
+``` c
 /* 
  * A program that prints Hello n times
  * Compilation: gcc whilen.c -o whilen.c
@@ -656,12 +703,11 @@ int main() {
     i++;
   }
 }
+```
 
-Semantics
+### while100.c
 
- 
-
-while100.c
+``` c
 /* 
  * A program that reads a number from keyboard
  * until user enters 100
@@ -681,12 +727,11 @@ int main() {
   }
   printf("Out of the loop at last!");
 }
+```
 
-Semantics
+### whilen100.c
 
- 
-
-whilen100.c
+``` c
 /* 
  * A program that reads a number from keyboard
  * until user enters 100 or for n times.
@@ -707,7 +752,4 @@ int main() {
   }
   printf("Out of the loop! n = %d and i = %d", n, i);
 }
-
-Semantics
-
- 
+```
