@@ -34,6 +34,7 @@ Assumption: x, y are of int types
             a, b, c are of char types
             p, q, r is of float type
 
+```
  1. scanf("%d, &a);   --> Missing end quote
                          Syntax error
 
@@ -79,9 +80,11 @@ Assumption: x, y are of int types
  11. x = scanf("%d", &x);
     Input = 123;
     Effect: x = 1;
-    
+ ```
+ 
 ## (C) Declaration & assignment
 
+```
  1. int x 2;       --> Missing '=' operator
                       Syntax error
 
@@ -138,9 +141,11 @@ Assumption: x, y are of int types
 
  17. unsigned int x = UINT_MAX;
     y++;               --> Effect: y = 0
+```
 
 ## (D) Increment/Decrement operations
 
+```
  1. int x = 1;
    x++;              Effect: x = 2
 
@@ -162,12 +167,13 @@ Assumption: x, y are of int types
  6. int x = 1;  
    int y = 2 * ++x;  --> First increment, then multiply and assign
                          Effect: x = 2, y = 4
- 
+ ```
 
 ## (E) Control structures
 
 Assumption: x, y, z are of int types
 
+```
  1. while ( x < y )
       x++;           --> Only x incremented in while loop
       y--;               Logical error
@@ -274,10 +280,11 @@ Assumption: x, y, z are of int types
     else {                                  
        ....                            }
     }
-
+```
 
 ## (F) Functions
 
+```
  1. int func() {
       :
      return x;   // x should be an int
@@ -337,6 +344,7 @@ Assumption: x, y, z are of int types
       printf("%d %d", x, y);  --> Prints 2 10
       return 0;
    }
+```
 
 In addition, you can go through the role of the keywords 'break' and 'continue' in for/while/do-while loops and switch...case from any
 C programming book.
