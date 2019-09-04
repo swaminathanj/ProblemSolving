@@ -9,22 +9,22 @@
 Assumption: x, y are of int types
 
 ```
- 1. printf("%d", x)   --> Missing semicolon
+1. printf("%d", x)   --> Missing semicolon
                          Syntax error
 
- 2. printf("%d, x")   --> Wrong placement of quotes
+2. printf("%d, x")   --> Wrong placement of quotes
                          Syntax error
 
- 3. printf("%f", x);  --> Wrong format specifier
+3. printf("%f", x);  --> Wrong format specifier
                          Semantic error
 
- 4. printf("%z", x);  --> Invalid format specifier
+4. printf("%z", x);  --> Invalid format specifier
                          Semantic error
 
- 5. printf("%d %d", x); --> Mismatch in #format specifier
+5. printf("%d %d", x); --> Mismatch in #format specifier
                            Semantic error
 
- 6. printf("x+y = %d", x-y); --> Meant sum, performed difference
+6. printf("x+y = %d", x-y); --> Meant sum, performed difference
                                 Logical error
 ```
 
@@ -35,49 +35,49 @@ Assumption: x, y are of int types
             p, q, r is of float type
 
 ```
- 1. scanf("%d, &a);   --> Missing end quote
+1. scanf("%d, &a);   --> Missing end quote
                          Syntax error
 
- 2. scanf("%d", a)    --> Expecting address, got value instead
+2. scanf("%d", a)    --> Expecting address, got value instead
                          Semantic error
 
- 3. scanf("%c%c%c", &a, &b, &c);  
+3. scanf("%c%c%c", &a, &b, &c);  
    Input: 123                
    Effect: a = '1', b = '2', c = '3'
 
- 4. scanf("%c%c%c", &a, &b, &c);
+4. scanf("%c%c%c", &a, &b, &c);
    Input: 1
           2
           3                  
    Effect: a = '1', b = '\n', c = '2'     (Logical error)
 
- 5. scanf("%c\n%c\n%c", &a, &b, &c);
+5. scanf("%c\n%c\n%c", &a, &b, &c);
    Input: 1
           2
           3                  
    Effect: a = '1', b = '2', c = '3'      (Correct way to read)
 
- 6. scanf("%c%d", &a, &x);
+6. scanf("%c%d", &a, &x);
    Input: 123
    Effect: a = '1', b = 23
 
- 7. scanf("%f", &r);
+7. scanf("%f", &r);
    Input: 123
    Effect: r = 123.0
 
- 8. scanf("%d", &x);
+8. scanf("%d", &x);
    Input: 12.3
    Effect: x = 12
 
- 9. scanf("%d%f", &x, &r);
+9. scanf("%d%f", &x, &r);
    Input: 12.3
    Effect: x = 12, r = 0.3
 
- 10. scanf("%d.%d", &x, &y);
+10. scanf("%d.%d", &x, &y);
     Input: 12.3
     Effect: x = 12, y = 3
 
- 11. x = scanf("%d", &x);
+11. x = scanf("%d", &x);
     Input = 123;
     Effect: x = 1;
  ```
