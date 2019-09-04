@@ -25,7 +25,7 @@ Start solving these problems in the lines demonstrated above.
  5. [Dice Rolling (1093A)](https://codeforces.com/problemset/problem/1093/A)
  6. [Definite Game (1081A)](https://codeforces.com/problemset/problem/1081/A)
  7. [Vova and Train (1066A)](https://codeforces.com/problemset/problem/1066/A)
- 8. [Gennady and Card Bame (1097A)](https://codeforces.com/problemset/problem/1097/A)
+ 8. [Gennady and Card Game (1097A)](https://codeforces.com/problemset/problem/1097/A)
  9. [Uniform String (1092A)](https://codeforces.com/problemset/problem/1092/A)
  10. [Petya and Origami (1080A)](https://codeforces.com/problemset/problem/1080/A)
  11. [The King's Race (1075A)](https://codeforces.com/problemset/problem/1075/A)
