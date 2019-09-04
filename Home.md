@@ -6,7 +6,7 @@
 ### The Fundamentals
  - [Basic Syntax](BasicSyntax.md)
  - [Semantics of Basic Syntax Constructs](BasicSemantics.md)
- - [Under the hood: How a program runs](UnderTheHood.md)
+ - [Under the hood: How does a program run?](UnderTheHood.md)
  
 ### Worked out Examples
 Problems for which solutions are worked out in an incremental fashion
