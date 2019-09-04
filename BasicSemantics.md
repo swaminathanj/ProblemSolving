@@ -85,86 +85,86 @@ Assumption: x, y are of int types
 ## (C) Declaration & assignment
 
 ```
- 1. int x 2;       --> Missing '=' operator
+1. int x 2;       --> Missing '=' operator
                       Syntax error
 
- 2. int x = 2.5;   --> Effect x = 2 (a good compiler will throw error)
+2. int x = 2.5;   --> Effect x = 2 (a good compiler will throw error)
                       Semantic error
 
- 3. float r = 2;   --> Valid assignment (Why?)
+3. float r = 2;   --> Valid assignment (Why?)
                       Effect: r = 2.0
 
- 4. int x = 5, y = 2, z;
+4. int x = 5, y = 2, z;
    z = x/y;              --> Effect: z = 2 (Why not 2.5?)
 
- 5. int x = 5, y = 2;
+5. int x = 5, y = 2;
    float r = x/y;        --> Effect: r = 2 (Why not 2.5 now?)
 
- 6. int x = 5;
+6. int x = 5;
    float p = 2.0, r;
    r = x/p;              --> Effect: r = 2.5 (Finally worked)
 
- 7. int x;
+7. int x;
    float x;      --> x is already defined
                      Semantic error
 
- 8. int x;
+8. int x;
    int y = x/2;  --> x is not initialized, may have a garbage value
                      Logical error
 
- 9. int x = x/2;  --> x is not defined, cyclic dependency
+9. int x = x/2;  --> x is not defined, cyclic dependency
                      Semantic error
 
- 10. char a = 'xy';  --> 'xy' is not a single char
+10. char a = 'xy';  --> 'xy' is not a single char
                         Semantic error
 
- 11. char a = 65;    --> Valid assignment (Why?)
+11. char a = 65;    --> Valid assignment (Why?)
     printf("%c ", a);   print a as char and as int and check
     printf("%d ", a);   65 is the ASCII value of 'A'
 
- 12. char a = 128;   --> Invalid assignment (Why?)
+12. char a = 128;   --> Invalid assignment (Why?)
 
- 13. char a = 'A';
+13. char a = 'A';
     a++;            --> Valid increment (Why?)
     printf("%c ", a);   print a as char and as int and check
     printf("%d ", a);   Effect: 'B' is printed
 
- 14. char a = '\n'   
+14. char a = '\n'   
     a++;            --> Valid increment again
                         print and check it out
 
- 15. int x = INT_MAX;
+15. int x = INT_MAX;
     x++;               --> Effect: x = INT_MIN
 
- 16. int y = INT_MIN;
+16. int y = INT_MIN;
     y--;               --> Effect: y = INT_MAX
 
- 17. unsigned int x = UINT_MAX;
+17. unsigned int x = UINT_MAX;
     y++;               --> Effect: y = 0
 ```
 
 ## (D) Increment/Decrement operations
 
 ```
- 1. int x = 1;
+1. int x = 1;
    x++;              Effect: x = 2
 
- 2. int x = 1;
+2. int x = 1;
    ++x;              Effect: x = 2
 
- 3. int x = 1;
+3. int x = 1;
    int y = x++;  --> First assign, then increment
                      Effect: x = 2, y = 1
 
- 4. int x = 1;  
+4. int x = 1;  
    int y = ++x;  --> First increment, then assign
                      Effect: x = 2, y = 2
 
- 5. int x = 1;
+5. int x = 1;
    int y = 2 * x++;  --> First multiply & assign, then increment
                          Effect: x = 2, y = 2
 
- 6. int x = 1;  
+6. int x = 1;  
    int y = 2 * ++x;  --> First increment, then multiply and assign
                          Effect: x = 2, y = 4
  ```
@@ -174,36 +174,36 @@ Assumption: x, y are of int types
 Assumption: x, y, z are of int types
 
 ```
- 1. while ( x < y )
+1. while ( x < y )
       x++;           --> Only x incremented in while loop
       y--;               Logical error
 
- 2. if ( x = y ) {    --> Assign op used instead of ==
+2. if ( x = y ) {    --> Assign op used instead of ==
         :                Logical error
         :
    }
 
- 3. if ( x < y )
+3. if ( x < y )
         :
    if ( x > z )
         :
    else              --> else part for which if statement?
         :                (Usually else binds with closest if)
 
- 4. if ( x > y && --x > z )   --> If x <= y, --x may not happen
+4. if ( x > y && --x > z )   --> If x <= y, --x may not happen
         :                        (short circuited evaluation)
 
- 5. if ( x > y || --x > z )   --> If x > y, --x may not happen
+5. if ( x > y || --x > z )   --> If x > y, --x may not happen
         :                        (short circuited evaluation)
    
    Bottomline: Never write code with side-effects
 
- 6. if ( x )      
+6. if ( x )      
       :          --> This part is executed if x > 0
    else
       :          --> This part is executed if x <= 0
 
- 7. if ( x > y )
+7. if ( x > y )
       :
    else if ( x > y && y > z )
       :           --> This statement is not reachable
@@ -222,30 +222,30 @@ Assumption: x, y, z are of int types
    else
       :
 
- 8. int i = 1;
+8. int i = 1;
    while ( i > 10 ) {  --> While body never entered
      :                     Logical error
      i++;
    }
 
- 9. int i = 1;
+9. int i = 1;
    while ( i < 10 ) {  --> Infinite loop since i is not incremented
        :                   Logical error
    }
    
- 10. for (int i = 1; i < 10; i++) {
+10. for (int i = 1; i < 10; i++) {
           :
     }
     printf("%d", i);   --> i not defined
 
- 11. int i = 1;
+11. int i = 1;
     while ( i < 10) {            for (int i=1; i<10; i++) {
        ::::             SAME AS      ::::
        ::::                      }
        i++;  
     }
 
- 12. do {                            ::::
+12. do {                            ::::
        ::::                         ::::
        ::::                       while (i < 10) {
        i++;            SAME AS         ::::
@@ -253,12 +253,12 @@ Assumption: x, y, z are of int types
                                        i++;
                                   }
 
- 13. for (int i=1; i<10; i++);   --> for loop ends due to semi-colon
+13. for (int i=1; i<10; i++);   --> for loop ends due to semi-colon
     {                               Semantic error
         // This code is executed    (same applies to while loop too)
         // only once
     } 
- 14. if ( cond1 ) { ... }                switch(cond) {
+14. if ( cond1 ) { ... }                switch(cond) {
    else if ( cond2 ) { ... }  SAME AS  case 1: .....
    else if ( cond3 ) { ... }                   break;
    else { ... }                        case 2: .....
@@ -268,7 +268,7 @@ Assumption: x, y, z are of int types
                                        default: ....
                                        }
 
- 15. if ( cond3 ) {                     switch(cond) {         
+15. if ( cond3 ) {                     switch(cond) {         
       if ( cond2 ) {
           if (cond1) {   SAME AS       case 1: ....
             ....                                    // no break;
@@ -285,7 +285,7 @@ Assumption: x, y, z are of int types
 ## (F) Functions
 
 ```
- 1. int func() {
+1. int func() {
       :
      return x;   // x should be an int
    }
@@ -295,7 +295,7 @@ Assumption: x, y, z are of int types
       return 0;           (The x in main has nothing to with x in func
    }                       Both are very different)
 
- 2. void func() {      --> Use void if nothing is returned
+2. void func() {      --> Use void if nothing is returned
       :
       return; // not necessary
    }
@@ -305,7 +305,7 @@ Assumption: x, y, z are of int types
       return 0;       NOTE: void v = func(); is wrong
    }
 
- 3. void func(int a, int b) {
+3. void func(int a, int b) {
       :
       return;
    }
@@ -315,7 +315,7 @@ Assumption: x, y, z are of int types
       return 0;         Semantic error
    }
 
- 4. float func(int a, int b) {
+4. float func(int a, int b) {
       :
       return;
    }
@@ -325,19 +325,19 @@ Assumption: x, y, z are of int types
       return 0;                 Semantic error
    }
 
- 5. int func(int a, int b) {  --> Return undefined of a >= b
+5. int func(int a, int b) {  --> Return undefined of a >= b
       if (a < b)                 Semantic error
          return a;
    }
 
- 6. int x = 5, y = 10;    --> Global variables
+6. int x = 5, y = 10;    --> Global variables
    
    int main() {
       printf("%d %d", x, y);  --> Prints 5 10
       return 0;                   Globals can be accessed
    }                              from the entire file
 
- 7. int x = 5, y = 10;    --> Global variables
+7. int x = 5, y = 10;    --> Global variables
    
    int main() {
       int x = 2;              --> Local x hides global x
