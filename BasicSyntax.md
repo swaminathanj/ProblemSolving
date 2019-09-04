@@ -2,8 +2,9 @@
 
 ## 1. Getting started
 
+### nothing.c
+
 ``` c
-nothing.c
 /* 
  * A program that does nothing
  * Compilation: gcc nothing.c -o nothing
@@ -22,11 +23,14 @@ This is probably the first program you will write. Although it doesn't do anythi
 
  - main is a function that denotes the starting point. (What is a function??)
  - The C runtime system hands over the control to the main when the program is executed.
- - main returns an integer in this case an integer. Generally, 0 is returned if the program executed fine (what is fine??).
+ - main returns an integer. Generally, 0 is returned if the program executed fine (what is fine??).
 
 
-2. Output
-hello.c
+## 2. Output
+
+### hello.c
+
+``` c
 /* 
  * A program that prints Hello World
  * Compilation: gcc hello.c -o hello
@@ -39,12 +43,15 @@ int main() {
     printf("Hello World");
     return 0;
 }
+```
 
-Semantics
+### Semantics
 
-printf() is a function which is used to write to the terminal. This is defined in the header file stdio.h (what is header??) and hence we have to include the header if we need to use it.
+ - printf() is a function which is used to write to the terminal. This is defined in the header file stdio.h (what is header??) and hence we have to include the header if we need to use it.
 
-hello_nl.c
+### hello_nl.c
+
+``` c
 /* 
  * A program that prints Hello World followed by a newline
  * Compilation: gcc hello_nl.c -o hello_nl
@@ -57,10 +64,11 @@ int main() {
     printf("Hello World\n");
     return 0;
 }
+```
 
-Semantics
+### Semantics
 
-\n denotes the new line character. The backslash '\' before 'n' signifies how 'n' should be interpreted as newline.
+ - \n denotes the new line character. The backslash '\' before 'n' signifies how 'n' should be interpreted as newline.
 
 hello_tab.c
 /* 
