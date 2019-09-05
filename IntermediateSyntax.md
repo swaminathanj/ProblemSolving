@@ -187,20 +187,18 @@ int main() {
 
 ### Practice problems (break your implementation into functions)
 
-```
-1. UNIQUE: Given an array, you have to determine if all the elements of the array are unique. If so, it should print YES. Otherwise print NO. {28, 61, -14, 7, 44, -35, 50} has unique elements whereas {28, 61, -14, 7, 44, -35, 44} does not.
+1. **UNIQUE**: Given an array, you have to determine if all the elements of the array are unique. If so, it should print YES. Otherwise print NO. {28, 61, -14, 7, 44, -35, 50} has unique elements whereas {28, 61, -14, 7, 44, -35, 44} does not.
 Input: In the first line a single integer n that denotes the size of the array. The second line contains n integers.
 Output: YES or NO
-2. PEAK ELEMENT: Given a bitonic array, you have to determine the peak element. A bitonic array is an array which contains elements that is initially increasing and then decreasing. { -17, -3, 4 , 12, 38, 26, 9, 0, -1} is a bitonic array and the peak element is 38.
+2. **PEAK ELEMENT**: Given a bitonic array, you have to determine the peak element. A bitonic array is an array which contains elements that is initially increasing and then decreasing. { -17, -3, 4 , 12, 38, 26, 9, 0, -1} is a bitonic array and the peak element is 38.
 Input: In the first line a single integer n that denotes the size of the array. The second line contains n integers.
 Output: A single integer that is the peak
-3. ROTATION: Rotate an array k times. For example, rotating the array {1, 2, 3, 4, 5, 6, 7, 8} by k = 3 times results in the array {4, 5, 6, 7, 1, 2, 3}.
+3. **ROTATION**: Rotate an array k times. For example, rotating the array {1, 2, 3, 4, 5, 6, 7, 8} by k = 3 times results in the array {4, 5, 6, 7, 1, 2, 3}.
 Input: The first line contains two integers n and k. The second line contains n integers.
 Output: Print the rotated array.
-4. MERGE: Given two sorted arrays, you have to merge them both into a single sorted array. For example, merging {1, 3, 6, 7} and {2, 4, 5, 8} results in {1, 2, 3, 4, 5, 6, 7, 8}.
+4. **MERGE**: Given two sorted arrays, you have to merge them both into a single sorted array. For example, merging {1, 3, 6, 7} and {2, 4, 5, 8} results in {1, 2, 3, 4, 5, 6, 7, 8}.
 Input: The first line contains the sizes of two input arrays n and m. The second line contains n elements of the first sorted array. The third line contains m elements of the second sorted array.
 Output: Elements of the merged sorted array
-```
 
 ## 2. Strings
 Strings are one-dimensional array of chars terminated by the null character '\0'. Why do we need the null character? Simply because all words are not of the same size. If in the problem being dealt, all words are guaranteed to be of same size, then char array is sufficient. If not, use strings. The purpose of null char is to figure out that the word actually ended. In short, a string is a variable sized char array with '\0' to signify the end. 
