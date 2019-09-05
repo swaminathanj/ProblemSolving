@@ -6,6 +6,7 @@
 ### The Fundamentals
  - [Basic Syntax](BasicSyntax.md)
  - [Semantics of Basic Syntax Constructs](BasicSemantics.md)
+ - [Basic Programming Patterns](ProgrammingPatterns.pdf)
  - [Under the hood: How does a program run?](ProgramExecution.mp4)
  
 ### Worked out Examples
@@ -34,3 +35,11 @@ Start solving these problems in the lines demonstrated above.
  14. [Coins (1061A)](https://codeforces.com/problemset/problem/1061/A)
  15. [Sum of digits (FLOW006)](https://www.codechef.com/problems/FLOW006)
  16. [Bear and Big Brother (791A)](https://codeforces.com/problemset/problem/791/A)
+ 
+## Unit 2
+
+### Intermediate Programming constructs
+ - [Intermediate Syntax](IntermediateSyntax.md)
+ 
+### Problems from Code Forces
+ 1. 
