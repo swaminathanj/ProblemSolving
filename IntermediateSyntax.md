@@ -340,29 +340,35 @@ int main() {
  - arr[i] denotes the ith row.
  - arr denotes the array itself.
 
-4. Recursion
- 
+## 4. Recursion
+Please refer to a book or resources in web.
 
-5. Bitwise Operators
+## 5. Bitwise Operators
 For the purpose of demonstration, 8 bit representation for the numbers is assumed.
 
-Binary AND operator: &
+### Binary AND operator: &
 Copies a bit to the result if it exists in both operands.
+
+```
 r = 13 & 6; // r gets the value of 4
 0 0 0 0 1 1 0 1
 0 0 0 0 0 1 1 0  &
 ---------------
 0 0 0 0 0 1 0 0   =   4
 ---------------
-Application: & can be used (i) to determine the bit at kth position and (ii) to set the kth bit to 0.
+```
+
+**Application**: & can be used (i) to determine the bit at kth position and (ii) to set the kth bit to 0.
 k = 0 denotes the rightmost bit position.
 k = 7 denotes the leftmost bit position (in this demonstration).
 Note: For 32-bit integer, leftmost bit position is 31. for 64-bit long, leftmost bit position is 63.
 
-Problem 1: Let's say we want to know the bit at position k for the number n.  
-Solution: To determine this, all you have to do is to perform a binary AND operation of n with 2k i.e. 8. Assuming you have function power(int x, int y) to compute xy, which you can invoke by passing 2 and k to get 2k, you can accomplish it by the following check:
-- If ( n & power(2,k) == power(2,k) ) then 1 is present in kth position of n.
-- If ( n & power(2,k) == 0 ) then 0 is present in kth position of n.
+**Problem 1**: Let's say we want to know the bit at position k for the number n.  
+**Solution**: To determine this, all you have to do is to perform a binary AND operation of n with 2^k i.e. 8. Assuming you have function power(int x, int y) to compute xy, which you can invoke by passing 2 and k to get 2^k, you can accomplish it by the following check:
+ - If ( n & power(2,k) == power(2,k) ) then 1 is present in kth position of n.
+ - If ( n & power(2,k) == 0 ) then 0 is present in kth position of n.
+ 
+```
 Example 1: n = 13, k = 3
 0 0 0 0 1 1 0 1         (n = 13)
 0 0 0 0 1 0 0 0   &   (k = 3 ==> 2k = 8)
@@ -375,48 +381,69 @@ Example 2: n = 13, k = 6
 ---------------
 0 0 0 0 0 0 0 0  =  0
 ---------------
-Problem 2: How to set the kth bit to 0?
-Solution: Left as an exercise
+```
+
+**Problem 2**: How to set the kth bit to 0?
+**Solution**: Left as an exercise
  
-Binary OR operator: |
+### Binary OR operator: |
 Copies a bit to the result if it exists in at least one operand.
+
+```
 r = 13 | 6; // r gets the value of 15
 0 0 0 0 1 1 0 1
 0 0 0 0 0 1 1 0  &
 --------------
 0 0 0 0 1 1 1 1   =   15
 --------------
-Application: | can be used to set the bit at kth position to 1. 
-Problem: How to set the kth bit to 1? 
-Solution: Left as an exercise 
+```
+
+**Application**: | can be used to set the bit at kth position to 1. 
+**Problem**: How to set the kth bit to 1? 
+**Solution**: Left as an exercise 
  
-Binary XOR operator: ^
+### Binary XOR operator: ^
 Copies a bit to the result if it exists in exactly one operand.
+```
 r = 13 ^ 6; // r gets the value of 11
 0 0 0 0 1 1 0 1
 0 0 0 0 0 1 1 0  &
 --------------
 0 0 0 0 1 0 1 1   =   11
 --------------
-Application: | can be used to flip the bit at kth position i.e. from 0 to 1 or vice-versa. 
-Problem: How to flip the kth bit to 1? 
-Solution: Left as an exercise 
+```
+
+**Application**: | can be used to flip the bit at kth position i.e. from 0 to 1 or vice-versa. 
+**Problem**: How to flip the kth bit to 1? 
+**Solution**: Left as an exercise 
  
-Binary left shift operator: <<
+### Binary left shift operator: <<
 The left operands value is moved left by the number of bits specified by the right operand.
+```
 r = 13 << 5; // r gets the value of 160
 0 0 0 0 1 1 0 1  -->  1 0 1 0 0 0 0 0 = 160
-Application: << can be used to produce the effect of multiplication. Left shift by 1 implies doubling the value. Left shift by 2 implies doubling twice. Left shift by 10 implies doubling 10 times.
-Problem: How do you compute 13 x 7 using << operator?
-Solution: This can be done in a sequence of steps.
+```
+
+**Application**: << can be used to produce the effect of multiplication. Left shift by 1 implies doubling the value. Left shift by 2 implies doubling twice. Left shift by 10 implies doubling 10 times.
+
+**Problem**: How do you compute 13 x 7 using << operator?
+**Solution**: This can be done in a sequence of steps.
+```
 13 x 5 is same as 0 0 0 0 1 1 0 1 x 0 0 0 0 0 1 1 1
 This can be broken down into:
 (0 0 0 0 1 1 0 1 x 0 0 0 0 0 0 0 1) + (0 0 0 0 1 1 0 1 x 0 0 0 0 0 0 1 0) + (0 0 0 0 1 1 0 1 x 0 0 0 0 0 1 0 0)
-Binary right shift operator: >>
+```
+
+### Binary right shift operator: >>
 The left operands value is moved right by the number of bits specified by the right operand.
+```
 r = 13 >> 2; // r gets the value of 
 0 0 0 0 1 1 0 1  -->  0 0 0 0 0 0 1 1 = 3
+```
+
+### One's complement operator: ~
+Please refer to a book or resources in web.
  
-One's complement operator: ~
- 
-6. Structures
+## 6. Structures
+Please refer to a book or resources in web.
+
