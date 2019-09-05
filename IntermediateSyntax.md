@@ -359,11 +359,12 @@ r = 13 & 6; // r gets the value of 4
 ```
 
 **Application**: & can be used (i) to determine the bit at kth position and (ii) to set the kth bit to 0.
-k = 0 denotes the rightmost bit position.
-k = 7 denotes the leftmost bit position (in this demonstration).
-Note: For 32-bit integer, leftmost bit position is 31. for 64-bit long, leftmost bit position is 63.
+ - k = 0 denotes the rightmost bit position.
+ - k = 7 denotes the leftmost bit position (in this demonstration).
+ - Note: For 32-bit integer, leftmost bit position is 31. for 64-bit long, leftmost bit position is 63.
 
-**Problem 1**: Let's say we want to know the bit at position k for the number n.  
+**Problem 1**: Let's say we want to know the bit at position k for the number n.
+
 **Solution**: To determine this, all you have to do is to perform a binary AND operation of n with 2^k i.e. 8. Assuming you have function power(int x, int y) to compute xy, which you can invoke by passing 2 and k to get 2^k, you can accomplish it by the following check:
  - If ( n & power(2,k) == power(2,k) ) then 1 is present in kth position of n.
  - If ( n & power(2,k) == 0 ) then 0 is present in kth position of n.
@@ -383,8 +384,8 @@ Example 2: n = 13, k = 6
 ---------------
 ```
 
-**Problem 2**: How to set the kth bit to 0?
-**Solution**: Left as an exercise
+ - **Problem 2**: How to set the kth bit to 0?
+ - **Solution**: Left as an exercise
  
 ### Binary OR operator: |
 Copies a bit to the result if it exists in at least one operand.
@@ -399,8 +400,6 @@ r = 13 | 6; // r gets the value of 15
 ```
 
 **Application**: | can be used to set the bit at kth position to 1. 
-**Problem**: How to set the kth bit to 1? 
-**Solution**: Left as an exercise 
  
 ### Binary XOR operator: ^
 Copies a bit to the result if it exists in exactly one operand.
