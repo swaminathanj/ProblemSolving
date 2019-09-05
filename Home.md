@@ -57,4 +57,12 @@ Start solving these problems in the lines demonstrated above.
  
 #### Strings
  1. [Mike and Palindrome (798A)](https://codeforces.com/contest/798/problem/A)
- 2. [Superhero Transformation](http://codeforces.com/problemset/problem/1111/A)
+ 2. [Superhero Transformation (1111A)](http://codeforces.com/problemset/problem/1111/A)
+ 3. [Right-Left Cipher (1085A)](http://codeforces.com/problemset/problem/1085/A)
+ 4. [Minimize the String (1076A)](http://codeforces.com/problemset/problem/1076/A)
+ 5. [Palindromic Twist (1027A)](http://codeforces.com/problemset/problem/1027/A)
+ 6. [Letters Rearranging (1093B)](http://codeforces.com/problemset/problem/1093/B)
+ 7. [Delete from Left (1005B)](http://codeforces.com/problemset/problem/1005/B)
+ 8. [Antipalindrome (981A)](http://codeforces.com/problemset/problem/981/A)
+ 9. [File Name (978B)](http://codeforces.com/problemset/problem/978/B)
+ 10. [Two-gram (977B)](http://codeforces.com/problemset/problem/977/B)
