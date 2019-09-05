@@ -142,5 +142,5 @@ Input: n, k
 ## Unit 3
 
 ### Structures, Pointers and LinkedList
- -[Exercises on Structures, Pointers and Linked List](SPLL.docx)
+ - [Exercises on Structures, Pointers and Linked List](SPLL.docx)
  
