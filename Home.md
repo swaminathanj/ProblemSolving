@@ -3,7 +3,7 @@
 
 ## Unit 1
 
-### The Fundamentals
+### Basic Programming Constructs
  - [Basic Syntax](BasicSyntax.md)
  - [Under the hood: How does a program run?](ProgramExecution.mp4)
  
@@ -141,6 +141,6 @@ Input: n, k
 
 ## Unit 3
 
-### Structures, Pointers and LinkedList
+### Advanced Programming Constructs
  - [Exercises on Structures, Pointers and Linked List](SPLL.docx)
  
