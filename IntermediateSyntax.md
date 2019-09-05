@@ -1,3 +1,5 @@
+# Intermediate Syntax and Semantics
+
 This document covers the intermediate syntax and semantics that includes arrays, strings, common library functions, recursion, structures and bitwise operators
 
 ## 1. Arrays
