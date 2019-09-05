@@ -138,3 +138,9 @@ Input: n, k
   Sample 2: 21 3        ==>  2684354562
   Sample 3: 3972947 20  ==>  3388289027
 ```
+
+## Unit 3
+
+### Structures, Pointers and LinkedList
+ -[Exercises on Structures, Pointers and Linked List](SPLL.docx)
+ 
