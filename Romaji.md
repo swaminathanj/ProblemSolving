@@ -268,7 +268,7 @@ None
 ### Implementation
 Define variables ch and last. For the first time, read the first 2 chars into last and ch respectively. Check if both are consonants. If so, print "NO" and exit. If not, copy ch to last and read the next char into ch. Repeat this till the end of the sequence. At the end, check if last holds a consonant. If so, print "NO" and exit. Finally, print "YES".
 
-```
+``` c
 // nolastconsonant.c
 
 #include <stdio.h>
