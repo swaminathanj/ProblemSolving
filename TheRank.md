@@ -216,7 +216,7 @@ None
 ### Implementation
 We will modify the function findtopper (call it computetopper) which will use findsum to compute the total and reset highest and topper as necessary.
 
-```
+``` c
 // computetopper.c
 
 #include <stdio.h>
