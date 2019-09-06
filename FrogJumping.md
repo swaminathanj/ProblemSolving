@@ -308,14 +308,14 @@ int main() {
 }
 ```
 ## Submission
- - Check out the problem 1077A Frog Jumping in https://codeforces.com/problemset/problem/1077/A
+ - Check out the problem 1077A Frog Jumping in [https://codeforces.com/problemset/problem/1077/A](https://codeforces.com/problemset/problem/1077/A). 
  - After checking your program thoroughly, submit your solution and get an Accepted message.
 
 ## A cautionary note
 
  - In older 32-bit machines, long is 32 bits only. In such a case, your submission may compute incorrect result in the test machine and solution may not be accepted. 
  - It is safer to use long long instead. (i.e. long long a, b, k, ...). The format specifier for reading/writing long long variable is "%lld" (el-el-d) on linux systems and "%I64d" (EYE-64-d) on Windows systems.
-Perhaps the program that would eventually be accepted by code forces would be of the following form with above two changes implemented.
+ - Perhaps the program that would eventually be accepted by code forces would be of the following form with above two changes implemented.
 
 ``` c
 // frogjump_cf.c
