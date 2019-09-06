@@ -33,7 +33,7 @@ Let's do a quick and dirty calculation.
 
  - 2^10/1024 is approximately equal to 10^3/1000. So 10^9 would be about 2^30. The largest value stored by an unsigned int is given by UINT_MAX, which is 2^32 - 1. Hence, unsigned int seems a good data type for a and k.
  - But wait!! If both a and k happen to be 10^9, the product would be 10^18. Can unsigned int hold the result? If it can't we will end up computing an incorrect product due to overflow.
- - 10^18 would be about 260. An unsigned int cannot never accommodate such a huge number. We need to use long or unsigned long.
+ - 10^18 would be about 2^60. An unsigned int cannot never accommodate such a huge number. We need to use long or unsigned long.
 Since a and k are both positive, the product would be positive too. Hence, we will go for unsigned long. 
 Implementation
 We will implement a function rjump for computing the current position, given jump length (right) and number of jumps (jumps). The main will read a and k, make a function call to rjump and print the returned result (current).
