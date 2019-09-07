@@ -1,4 +1,4 @@
-# Problem 1008A
+# Problem 1008A: Romaji
 
 ## Problem 1008A-1
 
