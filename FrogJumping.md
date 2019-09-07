@@ -1,4 +1,4 @@
-# Frog Jumping (1077A)
+# Problem 1077A: Frog Jumping
 
 ## Problem 1077A-1
 
