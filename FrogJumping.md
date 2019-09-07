@@ -102,7 +102,7 @@ Note: The frog reaches -20 (0 --> -5 --> -10 --> -15 --> -20) in 4 jumps.
 It is easy to infer that the solution is the negative of the product of b and k. So, it is easier to use the above implementation and make minor changes.
 
 ### Implementation considerations
-Since b and k are in the range 0 to 109 and we are to compute the negative of their product, unsigned long is not appropriate. So we use long instead. The long covers the range of -263 to 263 - 1 which can accommodate the maximum value of -1018 (or -260). 
+Since b and k are in the range 0 to 10^9 and we are to compute the negative of their product, unsigned long is not appropriate. So we use long instead. The long covers the range of -2^63 to 2^63 - 1 which can accommodate the maximum value of -10^18 (or -2^60). 
 
 ### Implementation
 We will implement a function ljump for computing the current position, given jump length (left) and number of jumps (jumps). The main will read b and k, make a function call to ljump and print the returned result (current).
@@ -246,7 +246,7 @@ Note
 - In the first query frog jumps 5 to the right, 2 to the left and 5 to the right so the answer is 5−2+5=8.
 - In the second query frog jumps 100 to the right, 1 to the left, 100 to the right and 1 to the left so the answer is 100−1+100−1=198.
 - In the third query the answer is 1−10+1−10+1=−17.
-- In the fourth query the answer is 109−1+109−1+109−1=2999999997.
+- In the fourth query the answer is 10^9−1+10^9−1+10^9−1=2999999997.
 - In the fifth query all frog's jumps are neutralised by each other so the answer is 0.
 - The sixth query is the same as the fifth but without the last jump so the answer is 1.
 
