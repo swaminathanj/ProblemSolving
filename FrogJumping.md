@@ -139,7 +139,8 @@ We twist the problem even further now. Starting at point 0 on the x-axis, it jum
 
 ```
 Input
-Three integers a, b, k such that 1 ≤  a, b, k  ≤  109, the jump lengths in right and left directions and the number of jumps.
+Three integers a, b, k such that 1 ≤  a, b, k  ≤  10^9, 
+the jump lengths in right and left directions and the number of jumps.
 
 Output
 The current position of the frog.
@@ -217,7 +218,8 @@ The previous program can compute the current position for only one test input. A
 Input
  - The first line of the input contains one integer t (1 ≤  t  ≤  1000) -- the number of test cases or queries
  - Each of the next t lines contain queries -- one query per line.
- - The query is described as three space-separated integers a, b, k such that 1 ≤  a, b, k  ≤  109, the jump lengths in right and left directions and the number of jumps.
+ - The query is described as three space-separated integers a, b, k such that 1 ≤  a, b, k  ≤  10^9, 
+   the jump lengths in right and left directions and the number of jumps.
 
 Output
  - Print t integers. The i-th integer should be answer of i-th query. The current position of the frog.
