@@ -67,7 +67,7 @@ Start solving these problems in the lines demonstrated above.
  9. [File Name (978B)](http://codeforces.com/problemset/problem/978/B)
  10. [Two-gram (977B)](http://codeforces.com/problemset/problem/977/B)
 
-#### Problems on Bitwise operators
+#### Bitwise operators
 
  1. [Get kth bit](Bitwise.md)
  2. [Is negative](Bitwise.md)
