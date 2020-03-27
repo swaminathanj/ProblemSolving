@@ -9,10 +9,12 @@ Aum Amma
 
 
 ## Tracking Students
-- Concatenation of profile link + handle allows you to see the details of a person. For example, the following links shows the (i) overall problems solved status and (ii) codeforces contests performance status of Mayank.
+- Concatenation of profile link + handle allows you to see the details of a person. 
+- For example, the following links shows the (i) overall problems solved status and (ii) codeforces contests performance status of Mayank.
     (i) https://www.stopstalk.com/user/profile/katana_handler 
     (ii) https://codeforces.com/profile/katana_handler
-- For convenience, one can setup a page or document or draft email with links to students under your advisor/consellorship. This way, you can readily click and track their progress everyday. For example, check the setup at https://www.amrita.ac.in/swaminathanj/ track the code@amrita students.
+- For convenience, one can setup a page or document or draft email with links to students under your advisor/consellorship. This way, you can readily click and track their progress everyday. 
+  - For example, check the setup at https://www.amrita.ac.in/swaminathanj/ track the code@amrita students.
 
 ## Daily routine
 - Pick 2-3 problems from codeforces or any other online judges and post in the class group before 8 or 9 am. (For S2 - C Programming faculty, S4 - Algorithms faculty, S6 - Compiler/Networks faculty)
