@@ -3,8 +3,8 @@ Aum Amma
 # Guidelines for Problem Solving
 
 ## Setting up
-- Students to register in http://codeforces.com if they don't have one.
-- Other problem solving sites include http://spoj.com, http://codechef.com, http://leetcode.com.
+- Students to register in http://codeforces.com and http://codechef.com if they don't have one.
+- Classical algorithmic problmes can be found athttp://spoj.com and http://leetcode.com.
 - For Math based problems, http://projecteuler.net.
 - Students to register in http://stopstalk.com. This pools in the data from all online judges and provides a dashboard view.
 - Advisors/Counselors to get the students' handles from all the above sites.
@@ -43,3 +43,4 @@ Aum Amma
     - Student helpers - Problem discussion
     - Please don't use Student helpers beyond problem discussion. Such as posting problems or tracking students. It will dilute the seriousness. May be they can pick the problem, but faculty has to post and frontend.
 
+Please feel free to contact me for any doubts/queries.
