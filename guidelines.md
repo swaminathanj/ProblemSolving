@@ -1,5 +1,7 @@
 Aum Amma
 
+# Guidelines for Problem Solving
+
 ## Setting up
 - Students to register in http://codeforces.com, http://spoj.com, http://projecteuler.net, http://codechef.com, http://leetcode.com.
 - Students to register in http://stopstalk.com. This pools in the data from all online judges and provides a dashboard view.
