@@ -3,14 +3,15 @@ Aum Amma
 # Guidelines for Problem Solving
 
 ## Setting up
-- Students to register in http://codeforces.com, http://spoj.com, http://projecteuler.net, http://codechef.com, http://leetcode.com.
+- Students to register in http://codeforces.com if they don't have one.
+- Other problem solving sites include http://spoj.com, http://projecteuler.net, http://codechef.com, http://leetcode.com.
 - Students to register in http://stopstalk.com. This pools in the data from all online judges and provides a dashboard view.
 - Advisors/Counselors to get the students' handles from all the above sites.
 
 
 ## Tracking Students
 - Concatenation of profile link + handle allows you to see the details of a person. 
-- For example, the following links shows the (i) overall problems solved status and (ii) codeforces contests performance status of Mayank.
+- For example, the following links show the (i) overall problems solved status and (ii) codeforces contests performance status of Mayank.
     (i) https://www.stopstalk.com/user/profile/katana_handler 
     (ii) https://codeforces.com/profile/katana_handler
 - For convenience, one can setup a page or document or draft email with links to students under your advisor/consellorship. This way, you can readily click and track their progress everyday. 
