@@ -4,7 +4,8 @@ Aum Amma
 
 ## Setting up
 - Students to register in http://codeforces.com if they don't have one.
-- Other problem solving sites include http://spoj.com, http://projecteuler.net, http://codechef.com, http://leetcode.com.
+- Other problem solving sites include http://spoj.com, http://codechef.com, http://leetcode.com.
+- For Math based problems, http://projecteuler.net.
 - Students to register in http://stopstalk.com. This pools in the data from all online judges and provides a dashboard view.
 - Advisors/Counselors to get the students' handles from all the above sites.
 
