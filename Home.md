@@ -1,6 +1,8 @@
 
 # Problem Solving by Programming
 
+This page is about problem solving by C programming. C is just a vehicle to program. It could be any other language instead.
+
 ## Unit 1
 
 ### Basic Programming Constructs
