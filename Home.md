@@ -1,12 +1,12 @@
 
-# Problem Solving using Programming
+# Problem Solving by Programming
 
 ## Unit 1
 
 ### Basic Programming Constructs
  - [Basic Syntax](BasicSyntax.md)
  - [Under the hood: How does a program run?](ProgramExecution.mp4)
- 
+
 ### Worked out Examples
 Problems for which solutions are worked out in an incremental fashion
  1. [Frog Jumping](FrogJumping.md)
@@ -33,7 +33,7 @@ Start solving these problems in the lines demonstrated above.
  14. [Coins (1061A)](https://codeforces.com/problemset/problem/1061/A)
  15. [Sum of digits (FLOW006)](https://www.codechef.com/problems/FLOW006)
  16. [Bear and Big Brother (791A)](https://codeforces.com/problemset/problem/791/A)
- 
+
 ### A recap
  - [Semantics of Basic Syntax Constructs](BasicSemantics.md)
  - [Basic Programming Patterns](ProgrammingPatterns.md)
@@ -42,7 +42,7 @@ Start solving these problems in the lines demonstrated above.
 
 ### Intermediate Programming constructs
  - [Intermediate Syntax](IntermediateSyntax.md)
- 
+
 ### Problems from Code Forces
 #### Arrays
  1. [Array Stabilization (1095B)](http://codeforces.com/problemset/problem/1095/B)
@@ -54,7 +54,7 @@ Start solving these problems in the lines demonstrated above.
  7. [Songs Compression (1015C)](http://codeforces.com/problemset/problem/1015/C)
  8. [Planning Expedition (1011B)](http://codeforces.com/problemset/problem/1011/B)
  9. [Unimodal Array (831A)](http://codeforces.com/problemset/problem/831/A)
- 
+
 #### Strings
  1. [Mike and Palindrome (798A)](https://codeforces.com/contest/798/problem/A)
  2. [Superhero Transformation (1111A)](http://codeforces.com/problemset/problem/1111/A)
@@ -71,14 +71,13 @@ Start solving these problems in the lines demonstrated above.
 
  1. [Get kth bit](Bitwise.md)
  2. [Is negative](Bitwise.md)
- 3. [Set Kth bit 1](Bitwise.md) 
+ 3. [Set Kth bit 1](Bitwise.md)
  4. [Set Kth bit 0](Bitwise.md)
- 5. [Count ones](Bitwise.md) 
- 6. [Left circular shift](Bitwise.md) 
+ 5. [Count ones](Bitwise.md)
+ 6. [Left circular shift](Bitwise.md)
  7. [Right circular shift](Bitwise.md)
 
 ## Unit 3
 
 ### Advanced Programming Constructs
  - [Exercises on Structures, Pointers and Linked List](SPLL.docx)
- 
